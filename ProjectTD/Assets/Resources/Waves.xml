@@ -1,0 +1,50 @@
+﻿<!-- 
+Campaign Level Definers: (For Syntax see the test level aka Level 0; Keep in mind to NOT change the order of the arguments or you might break something!) 
+ID: Level ID by which it is selected in the LevelManager. MUST BE UNIQUE FROM OTHER LEVEL IDS!!!
+WaveCount: How many Waves will the level have?
+Procedural: If set to true non-defined Waves will be generated automatically from the last Wave and the Growth Factor.
+            If set to false ALL Waves MUST be set manually or the LevelManager will throw an exception!
+            The first Wave of a Level MUST be defined and non-procedural!
+GrowthFactor: Only used (and required) if Procedural is set to true. Multiplier for the EnemyCounts of the last wave
+Waves: Contains all defined Waves of the current Level
+Wave: 
+      Each Wave has its own ID which determines when it will be occur. MUST BE UNIQUE WITHIN A LEVEL!!!
+      Enemies defines all enemies for the current Wave. Each Enemy Entry is defined by ID (dependent on GameMaster Enemy ID; should but doesn't need to be unique) and its Count.
+-->
+
+<CampaignLevels>
+	<Level>
+		<ID>0</ID>
+		<WaveCount>10</WaveCount>
+    <!--<WaveCount num="10"/>-->
+		<Procedural>true</Procedural>
+		<GrowthFactor>1.5</GrowthFactor>
+		<Waves>
+			<Wave>
+				<WaveID>1</WaveID>
+				<Enemies>
+          <Entry>
+            <EnemyID>0</EnemyID>
+            <EnemyCount>5</EnemyCount>
+            <Delay>0.0</Delay>
+          </Entry>
+          <Entry>
+            <EnemyID>0</EnemyID>
+            <EnemyCount>5</EnemyCount>
+            <Delay>2.5</Delay>
+          </Entry>
+				</Enemies>
+			</Wave>
+      <Wave>
+        <WaveID>10</WaveID>
+        <Enemies>
+          <Entry>
+            <EnemyID>0</EnemyID>
+            <EnemyCount>250</EnemyCount>
+            <Delay>2.5</Delay>
+          </Entry>
+        </Enemies>
+      </Wave>
+		</Waves>
+	</Level>
+</CampaignLevels>

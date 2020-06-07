@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{438BE767-D04C-C2B9-A361-23BE0735D102}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Entities/Buildings/Towers/ProjectileTower.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Entities/Enemies/Enemy.cs" Line="44" Column="10" />
+      <File FileName="Assets/Scripts/Entities/Buildings/Towers/ProjectileTower.cs" Line="22" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
